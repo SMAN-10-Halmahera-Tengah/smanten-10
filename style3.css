@@ -1,0 +1,150 @@
+
+.box-1{
+    height: 550px;
+    width: 700px;
+    background-color: orange;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.box-2{
+    height: 550px;
+    width: 700px;
+    background-color: green;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.contain{
+     display: flex;
+     column-gap: 30px;
+}
+.box-3{
+    height: 400px;
+    width: 100%;
+    background-color: red; 
+    top: 50%;
+    font-weight: bolder;
+    font-size: 100px;
+}
+.laman{
+    background-color: rgb(167, 167, 133);
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
+.kelas-10{
+    
+    width: 200px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.kls img{
+    max-width: 500px;
+    height: 550px;}
+    display: flex;
+     column-gap: 10px;
+
+.text1{
+color: blue;
+}
+ 
+.kls{
+position: relative;
+background-color: orange;
+}
+
+.text-1{
+    position: absolute;
+top: 65%;
+font-weight:bolder;
+font-size: 30px;
+color: #fff;
+padding: 15px;
+
+}
+.p1{
+ position: absolute;
+top: 80%;
+font-weight:bolder;
+font-size: 30px;
+color: #fff;
+padding: 15px;
+line-height: 10px;
+}
+.p2{
+    position: absolute;
+top: 85%;
+font-weight:bolder;
+font-size: 30px;
+color: #fff;
+padding: 15px;
+line-height: 10px; 
+}
+.jalan{
+    background-color: aqua;
+    height: 30px;
+    font-size: 30px;
+}
+.kepala{
+    background-color: rgba(46, 28, 5, 0.84);
+}
+.tgl{
+    background-color: greenyellow;
+    font-weight: bolder;
+    display: flex;
+    font-size: 30px;
+}
+.sekolah{
+    align-items:center;
+    justify-content: center;
+}
+.klar{
+    background-color: rgba(51, 46, 46, 0.654);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    height: 150px;
+}
+.class{
+    background-color: black;
+}
+.masukan{
+    background-color: aquamarine;
+}
+.kls{
+
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300px;
+    height: 50%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: auto;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}

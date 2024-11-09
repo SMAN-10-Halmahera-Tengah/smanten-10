@@ -1,0 +1,13 @@
+.li-navbar{
+    background color-scheme:
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: letf;
+    align-items: left;
+    list-style-type:none;
+}
+.a-navbar{
+    list-style-type: none;
+    text-decoration: none;
+}

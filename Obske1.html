@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observasi Kinerja Guru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        input[type="checkbox"] {
+            transform: scale(1.5);
+        }
+        textarea, input[type="date"], input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .teacher-select {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lembar Observasi Kinerja Guru</h1>
+
+    <div class="teacher-select">
+        <label for="teacher-name">Pilih Guru:</label>
+        <select id="teacher-name">
+            <option value="">Pilih nama guru...</option>
+            <option value="Nurlia,S.Pd">Nurlia,S.Pd</option>
+            <option value="Rajuan Rabu,S. Pd">Rajuan Rabu,S. Pd</option>
+            <option value="Agis Hi, Yahya,S. Pd">Agis Hi, Yahya,S. Pd</option>
+            <option value="Nurleli,, S.Pd">Nurleli,, S.Pd</option>
+            <option value="Wa Ode Riswan,S.Pd">Wa Ode Riswan,S.Pd</option>
+            <option value="Santi Yunus,S.Pd">Santi Yunus,S.Pd</option>
+            <option value="Suratni Hi Dikir,S.Pd">Suratni Hi Dikir,S.Pd</option>
+            <option value="Apriansyah Riyadi,S.Pd">Apriansyah Riyadi,S.Pd</option>
+            <option value="Narti Salim,S.Pd">Narti Salim,S.Pd</option>
+            <option value="Ebenheser,S.Pd">Ebenheser,S.Pd</option>
+            <option value="Rosmida P. Anjani">Rosmida P. Anjani</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <h2>Checklist Observasi Kinerja: <span id="selected-teacher"></span></h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Aspek yang Dinilai</th>
+                <th>Baik</th>
+                <th>Cukup</th>
+                <th>Kurang</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Persiapan pembelajaran</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Penguasaan materi</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Metode pengajaran</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Interaksi dengan siswa</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Evaluasi pembelajaran</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Kehadiran</td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+
+        <h2>Catatan Tambahan:</h2>
+        <textarea rows="4" placeholder="Tulis catatan tambahan di sini..."></textarea>
+
+        <p>Tanggal observasi: <input type="date"></p>
+        <p>Nama observer: <input type="text" placeholder="Masukkan nama observer"></p>
+    </div>
+
+    <script>
+        document.getElementById('teacher-name').addEventListener('change', function() {
+            document.getElementById('selected-teacher').textContent = this.value;
+        });
+    </script>
+</body>
+</html>

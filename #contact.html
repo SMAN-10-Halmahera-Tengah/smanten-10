@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4a4a4a;
+            text-align: center;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            flex-basis: 30%;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .contact-item:hover {
+            transform: translateY(-5px);
+        }
+        .contact-item i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .phone { background-color: #ffd700; }
+        .email { background-color: #98fb98; }
+        .address { background-color: #87cefa; }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Hubungi Kami</h1>
+        <div class="contact-info">
+            <div class="contact-item phone">
+                <i class="fas fa-phone"></i>
+                <h3>Telepon</h3>
+                <p>+62 123 456 7890</p>
+            </div>
+            <div class="contact-item email">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>info@sman10.sch.id</p>
+            </div>
+            <div class="contact-item address">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Alamat</h3>
+                <p>Jl. Contoh No. 123, Kota, 12345</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

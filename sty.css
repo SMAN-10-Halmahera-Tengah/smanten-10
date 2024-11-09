@@ -1,0 +1,29 @@
+.name{
+    background-color: blue;
+    align-items: center;
+   
+}
+.position{
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    background-color: bisque; 
+}
+.sink{
+    background-color: rgb(109, 87, 87);
+    color: greenyellow;
+}
+.data{
+    background: rgb(207, 236, 236);
+}
+.sekolah{
+    align-items:center;
+    justify-content: center;
+    background-color: crimson;
+}
+.kls img{
+    max-width: 100%;
+    height: auto;
+}

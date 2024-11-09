@@ -1,0 +1,36 @@
+/* Add some attractive styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .indicators {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+        .indicator {
+            text-align: center;
+            width: 150px;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .indicator:hover {
+            transform: translateY(-5px);
+        }
+        .indicator i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .indicator h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .indicator p {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }

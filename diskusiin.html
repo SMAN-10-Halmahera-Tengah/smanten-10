@@ -1,0 +1,49 @@
+<!-- ... kode yang sudah ada ... -->
+<link rel="stylesheet" href="csai.css" />
+<div class="Bodi">
+    </div>
+
+<!-- Tambahkan bagian chat baru ini -->
+<div id="chat-container">
+   <h3>Chat Interaktif Kepsek Pegawai dan Siswa</h3>
+   <div id="chat-messages"></div>
+   <form id="chat-form">
+       <input type="text" id="chat-input" placeholder="Ketik pesan..." required>
+       <button type="submit">Kirim</button>
+   </form>
+</div>
+
+<script>
+   // Kode JavaScript akan ditambahkan di sini
+</script>
+<script>
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const chatMessages = document.getElementById('chat-messages');
+
+    chatForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (chatInput.value) {
+            addMessage(chatInput.value, 'user-message');
+            chatInput.value = '';
+            // Simulasi balasan otomatis
+            setTimeout(() => {
+                addMessage('Terima kasih atas pesannya. Admin akan segera merespons.', 'other-message');
+            }, 1000);
+        }
+    });
+
+    function addMessage(text, className) {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('message', className);
+        messageElement.textContent = text;
+        chatMessages.appendChild(messageElement);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // Pesan sambutan
+    addMessage('Selamat datang di chat SMAN 10! Ada yang bisa kami bantu? dilaman ini Kepsek, pegawai, dan siswa bebas untuk berkomunikasi terkait informasi terbaru dan hal yang  berhubungan pembelajaran', 'other-message');
+</script>
+<MARQUEE>CHAT INI DIPERUNTUKAN BAGI KEPALA SEKOLAH DAN SISWA BERDASARKAN INFORMASI TERBARU,, Terima Kasih</MARQUEE>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- ... previous head content ... -->
+    <style>
+        /* ... previous styles ... */
+
+        .school-profile {
+            background: linear-gradient(135deg, #f6f9fc 0%, #e9f2f9 100%);
+            padding: 6rem 0;
+            overflow: hidden;
+        }
+
+        .profile-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .profile-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .profile-text h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .profile-text h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #3498db;
+            margin-top: 0.5rem;
+        }
+
+        .profile-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #34495e;
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-image {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .profile-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .profile-stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-text, .profile-image, .stat-item {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .profile-image {
+            animation-delay: 0.2s;
+        }
+
+        .stat-item:nth-child(1) {
+            animation-delay: 0.4s;
+        }
+
+        .stat-item:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+
+        .stat-item:nth-child(3) {
+            animation-delay: 0.8s;
+        }
+        .profil{
+            background-color: #1111;
+        }
+    </style>
+</head>
+<body>
+    <!-- ... previous body content ... -->
+<html>
+    <titel class="profil">Profil Sekolah</titel>
+    <head>
+        <MARQUEE>BERIKUT INFORMASI SINGKAT YANG DAPAT ANDA TEMUI SEPUTAR SMAN 10 HALMAHERA TENAGAH</MARQUEE>
+    </head>
+</html>
+    <main>
+        <section class="school-profile" id="about">
+            <div class="profile-content">
+                <div class="profile-text">
+                    <h2>Profil SMAN 10 Halmahera Tengah</h2>
+                    <p>SMAN 10 Halmahera Tengah adalah lembaga pendidikan unggulan yang berkomitmen untuk mengembangkan potensi siswa melalui pendidikan berkualitas dan berwawasan global.</p>
+                    <P>Kepala Sekolah : Fahrudin Jaim, S. Pd. M, Pd</P>
+                    <p>Oprator : Abit Ilham, S. Kom</p>
+                    <p>Sejak didirikan pada tahun 2015, kami telah menghasilkan lulusan berkualitas yang berkontribusi positif bagi masyarakat. Dengan kurikulum inovatif dan fasilitas modern, kami mempersiapkan siswa untuk menghadapi tantangan masa depan.</p>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3 Rombel</div>
+                            <div class="stat-label">Berdiri Sejak 2015</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">73 </div>
+                            <div class="stat-labe">Jumlah Siswa </div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15 Guru</div>
+                            <div class="stat-label">Guru & Staf</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-image">
+                <img src="web11.png" alt="SMAN 10 Halmahera Tengah">
+                </div>
+            </div>
+        </section>
+
+        <!-- ... other sections ... -->
+    </main>
+
+    <!-- ... footer ... -->
+
+    <script src="script.js"></script>
+</body>
+</html>

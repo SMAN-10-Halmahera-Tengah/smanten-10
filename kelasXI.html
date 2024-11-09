@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meeta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style3.css">
+        <title>Kelas XI </title> 
+        <sytle>
+          
+        </sytle>
+        <MARQUEE class="jalan"> Laman ini diakses oleh Kepala Sekolah, Wali kelas XI, Guru Mapel, dan siswa kelas XI</MARQUEE> 
+                    <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>SMAN 10 Website</title>
+                <link rel="stylesheet" href="css.css">
+            </head>
+            <body>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="prakarya.jpg" alt="Gambar 1" class="carousel-item">
+                        <img src="web11.png" alt="Gambar 2" class="carousel-item">
+                        <img src="Web 2.jpg" alt="Gambar 3" class="carousel-item">
+                    </div>
+                    <button class="carousel-button prev">&lt;</button>
+                    <button class="carousel-button next">&gt;</button>
+                </div>
+            
+                <script src="script.js"></script>
+        </div>
+            </head>
+         <p class="tgl">Isi Tanggal Anda Membuka Laman ini sebagai Bukti kehadiran Anda: <input type="date"> </p>
+    <body>
+        <div class="contain">
+        <div class ="box-1">KRITERIA KETUNTASAN TUGAS<div class="sekolah">
+            <embed type="application/PDF" 
+            src="Doc 1.pdf" height="500" width="100%" ></embed>
+                    </div></div>
+        <div class="box-2">REKAPITULASI KEHADIRAN SISWA PERBULAN<div class="rekap">
+            <embed type="application/PDF" 
+            src="rekap.pdf" height="500" width="100%" ></embed>
+                    </div></div>
+        </div class="box-3">EVALUASI KEPALA SEKOLAH UNTUK WALI KELAS DAN SISWA<div class="eva">
+            <embed type="application/PDF" 
+            src="Eva.pdf" height="500" width="100%" ></embed>
+                    </div></div>
+        </div>     
+        </div>
+        
+    </body>
+    <body>
+        <div class="klar">
+           <l1>Apakah anda ingin mengklarifikasi Aktifitas Anda?</l1> 
+           <l2>Silahkan Masukan tugas Yang anda Maksud</l2>
+          <style>
+              #formKomentar{
+                border: 5px solid#d1d1d1; width:500px; padding:10px;}
+            input, textarea{padding:10px; border:5px solid#e6e6e6; border-radius:5px; margin-bottom:15px;}
+            input:focus, textarea:focus{border:5px solid #5E4F4F;} textarea{wiidth:800px;}
+                input[type="submit"]{cursor:pointer; background: -webkit-linear-gradient(top, #efefef, #ddd);
+                     background: -moz-linear-gradient(top, #efefef, #ddd); background: -moz-linear-gradient(top, #efefef, #ddd); color:#333;
+                     text-shadow: 0px 1px 1px rgba(255,255,255,2); border: 1px solid #ccc;}input[type="submit"]:hover{background: -webkit-linear-gradient(top, #eee, #ccc);
+                     background: -moz-linear-gradient(top, #eee, #ccc); background: -moz-linear-gradient(top, #eee, #ccc);
+                     background: -o-linear-gradient(top, #eee, #ccc); background: linear-gradient(top, #eee, #ccc); border:1px solid #bbb;}
+            </style>
+            <form id="FormKomoentar">
+                <div>
+                    <input type="Text" Name="Nama" placeholder="Nama"/>
+                </div>
+                <input type="komentar" rows="10" placeholder="Komentar"></textarea>
+            </div>
+            <div>
+                <input Type="Submit" value="Tambahkan Komentar"
+
+          </style>
+        </div>
+        <input type="file"
+        <p1 clas="masukan">Masukan Tugas yang anda buat sesuai dengan klarifikasi anda</p1>
+        <script>
+            const carousel = document.querySelector('.carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+            let currentIndex = 0;
+        
+            function showItem(index) {
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+            }
+        
+            function showNext() {
+                currentIndex = (currentIndex + 1) % items.length;
+                showItem(currentIndex);
+            }
+        
+            function showPrev() {
+                currentIndex = (currentIndex - 1 + items.length) % items.length;
+                showItem(currentIndex);
+            }
+        
+            nextButton.addEventListener('click', showNext);
+            prevButton.addEventListener('click', showPrev);
+        
+            // Auto-slide setiap 5 detik
+            setInterval(showNext, 5000);
+        </script>
+        
+    </body>
+</html>
